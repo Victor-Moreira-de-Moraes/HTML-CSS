@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1 { /* box-level */
+            
+            /*
+            Caso eu queira transformar o 'h1' que é block-level em inline-level, eu só preciso usar o comando display, o mesmo vale para o contrário.
+
+            * display: inline;
+            * display: block;
+            * display: inline-block;
+
+            inline-block vai continuar sendo inline, mas vai ter caracteristicas de block também.
+            */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+            /*
+            Ordem:
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+
+            padding: 10px;
+            /*
+            Ordem: Sentido do relógio
+
+            * padding-top: 10px;
+            * padding-right: 10px;
+            * padding-bottom: 10px;
+            * padding-left: 10px;
+
+            Podemos informar só os valores em um único padding, seguindo o sentido do relógio: top, right, bottom, left.
+
+            * padding: 10px, 10px, 10px, 10px;
+
+            Caso todas sejam iguais, só precisamos informar uma vez só o tamanho.
+
+            * padding: 10px;
+
+            Posso colocar 2 valores só: 
+
+            * padding: 10px 20px;
+
+            Em cima e embaixo vão ficar 10px
+            e na direita e esquerda vão ficar 20px.
+            */
+
+            margin: 20px auto 40px auto;
+
+            /*
+            Ordem:
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            Padding e Margin, a hordem de indicar eles é no sentido do relógio, começando por cima, então: 
+            1-top 2-right 3-botoom 4-left
+            
+            margin: auto; 
+            Faz com que centralize horizontalmente. 
+            */
+
+            outline: 5px dashed salmon;
+            /*
+             outline-width: 5px;
+             outline-style: dashed;
+             outline-color: salmon;
+             */
+        }
+
+        a { /* inline-level */
+            border: 2px solid red;
+            /*
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+
+            Border-style
+              dashed = pontilhado;
+              solid = sólido;
+              dotted = pontilhado;
+              double = linha dupla;
+              groove = margem 3D
+            */
+
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tuddo funciona.</p>
+</body>
+</html>

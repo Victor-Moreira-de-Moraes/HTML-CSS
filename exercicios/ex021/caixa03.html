@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1 {
+            border: 12px solid transparent;
+            padding: 10px;
+
+            /* Shorthand: */
+            border-image: url('borda.png') 27 repeat;
+
+            /* Insere a imagem como uma borda: */
+            border-image-source: url('borda.png');
+            /* Fatia a imagem: */
+            border-image-slice: 27;
+            /* Repete a imagem várias vezes: */
+            border-image-repeat: repeat;
+
+            /* Agora, para ver qual número de bolinhas fica melhor no seu site, é só ir no DevTools e ver o que fica melhor. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+</html>

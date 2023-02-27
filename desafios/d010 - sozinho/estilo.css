@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format(truetype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+
+body {
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411), inset 1px 1px 1px rgba(0, 0, 0, 0.411);
+    outline:272px solid #83E1AD;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #83E1AD;
+    background-image: linear-gradient(178deg, #3DDC84, rgba(0, 0, 0, 78%));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+    height: 160px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: lighter;
+
+}
+
+header > p {
+    color: #83E1AD;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+nav {
+    text-align: left;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    font-size: small;
+    margin-left: -10px;
+    line-height: 65px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: #3DDC84;
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+}
+
+article > p {
+    text-indent: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article > h1 {
+    font-family: 'idroid', sans-serif;
+    color: #2FA866;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 25%);
+}
+
+h2 {
+    font-family: 'idroid', sans-serif;
+    font-size: large;
+    background-image: linear-gradient(88deg, #C5EBD6, white);
+    padding-left: 10px;
+    color: #2FA866;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 25%);
+}
+
+img.imagem {
+    width: 755px;
+}
+
+img#bugdroid {
+    padding-left: 215px;
+}
+
+div.video {
+    position: relative;
+    background-color: #1A5C37;
+    height: 0px;
+    margin-left:-20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #C5EBD6;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside > h3 {
+    background-color: #83E1AD;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.466);
+}
+
+aside > p {
+    margin: -5px 20px 10px 20px;
+    text-indent: 30px;
+}
+
+ul {
+    columns: 2;
+}
+
+footer {
+    text-align: center;
+    background-color: #1A5C37;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+}
